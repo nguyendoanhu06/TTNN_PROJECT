@@ -1,0 +1,216 @@
+.eventgrid-body {
+    margin-bottom: 110px;
+}
+
+.eventgrid-body-container {
+    max-width: 1190px;
+    display:flex;
+    margin: auto;
+    position: relative;
+}
+
+.eventgrid-body-col {
+    width: 100%;
+    display:flex;
+    min-height: 1px;
+    position: relative;
+}
+
+.eventgrid-body-wrap {
+    padding: 10px;
+    display:flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container-event {
+    display:flex;
+    max-width: 1190px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.main-event {
+    width: 100%;
+}
+
+.archive_event {
+    margin: 0;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ev-content {
+    position: relative;
+}
+
+.type2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.desc .event-thumbnail {
+    background-image: url("https://demo.ovatheme.com/aovis/wp-content/uploads/2023/03/Event02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 430px;
+}
+
+.overlay-thumbnail::before {
+    transition: all 0.5s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity : 0.4;
+    z-index: 4;
+}
+
+
+.event-thumbnail a {
+    text-decoration: none;
+    box-shadow: none;
+
+}
+
+.event_post {
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 0;
+    top: 55%;
+    padding: 45px 30px 40px 30px;
+    width: 100%;
+    z-index: 5;
+}
+
+
+.date-event {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    background-color: #d96c2c;
+}
+
+.event_title {
+    margin: 13px 0 0 0;
+    font-size: 24px;
+    line-height: 1.5;
+    max-height: 3em;
+    overflow: hidden;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: Space Grotesk;
+    font-weight: bold;
+    clear: both;
+}
+
+.event_title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.time-event {
+    opacity: 0;
+    visibility: hidden;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.wrapper {
+    margin-bottom: 20px;
+}
+
+.time-event .wrapper .time {
+    display:flex;
+    margin-top: 70px;
+}
+
+.time .icon-time svg {
+    color: #d96c2c;
+    width: 16px;
+    margin-right: 6px;
+
+}
+
+.time-event .wrapper label {
+    margin: 8px 0 0 22px;
+    display:block;
+    color: #797979;
+}
+
+.venue {
+    display:flex;
+}
+
+.venue svg {
+    color: #d96c2c;
+    width: 16px;
+    margin-right: 6px;
+
+}
+
+.gotodetail {
+    text-decoration: none;
+    color: #d96c2c;
+}
+
+.gotodetail .icon {
+    opacity: 0;
+    visibility: hidden;
+    display:flex;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    background-color: #fff;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.gotodetail .icon svg {
+    transition: all 0.3s ease;
+    display: inline-flex;
+    font-size: 14px;
+    color: #000;
+}
+
+.ev-content:hover .time-event,
+.ev-content:hover .gotodetail .icon,
+.ev-content:hover .event_post
+{
+    opacity: 1;
+    visibility: visible;
+    transform:translateY(-50%);
+}
+
+.ev-content:hover .event-thumbnail::before {
+   opacity: 0.75;
+}
+
+
+.event_title a:hover {
+    color: #d96c2c;
+}
+
+.gotodetail:hover .icon {
+    background-color: #d96c2c;
+}
+
+.gotodetail:hover .icon svg {
+    color: #fff;
+}

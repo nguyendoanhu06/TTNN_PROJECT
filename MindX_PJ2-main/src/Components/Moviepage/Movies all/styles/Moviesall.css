@@ -1,0 +1,52 @@
+.headerimg {
+    width: 100vw;
+    height: 10px;
+    
+}
+
+.movieall-body {
+    padding:  0 0 110px 0;
+    position: relative;
+
+}
+
+.movieall-body-container {
+    max-width: 1190px;
+    display:flex;
+    margin:auto;
+    position: relative;
+}
+
+.movieall-body-context {
+    width: 100%;
+}
+
+.movieall-body-wrap {
+    padding: 10px;
+    display:flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.movieall-list-container {
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+
+}
+
+.movie-list-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    display:grid;
+    gap: 30px;
+}
+
+.movie-list-grid .content-item {
+    transition: all 0.5s ease;
+    border: 5px solid transparent; 
+}
+
+.movie-list-grid .content-item:hover {
+    border-color: #d96c2c;
+}

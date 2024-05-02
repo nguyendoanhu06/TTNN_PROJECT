@@ -1,0 +1,125 @@
+.bannersidepage {
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-bottom: 0px;
+    position: relative;
+    height: 577px;
+}
+
+
+
+.bannersidepage-overlay {
+    background-image: url("https://demo.ovatheme.com/aovis/wp-content/uploads/2023/02/background-header-2.jpg");
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.bannersidepage-container {
+    display:flex;
+    margin: auto;
+    position: relative;
+}
+
+
+.bannersidepage-wrap {
+    display:flex;
+    flex-wrap:wrap;
+    width: 100%;
+    align-content: flex-start;
+    position: relative;
+}
+
+.bannersidepage-content {
+    text-align: center;
+
+}
+
+.bannersidepage-content-container {
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+    text-align: center;
+}
+
+.banner-header-wrap {
+    width: 100%;
+    position: relative;
+}
+
+.cover-color {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.header-banner {
+    position: relative;
+    z-index: 1;
+
+}
+
+.header_breadcrumbs {
+    padding: 310px 0 0 0;
+    width: 1920px;
+
+}
+
+.breadcrumbs {
+    display:inline-block;
+    list-style-type: none;
+    text-align: center;
+}
+
+.breadcrumbs li {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    display:inline-block;
+    font-weight: 500;
+    padding-right: 5px;
+    word-break: break-word;
+}
+.seperator svg {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 1em;
+    position: relative;
+}
+
+.bannersidepage-col {
+    width: 100%;
+    display:flex;
+    position: relative;
+    min-height: 1px;
+}
+
+.breadcrumbs li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+
+
+
+.breadcrumbs .nav-home a:hover {
+    color: #d96c2c;
+}
+
+.header_title {
+    text-transform: capitalize;
+    font-weight: bold;
+}

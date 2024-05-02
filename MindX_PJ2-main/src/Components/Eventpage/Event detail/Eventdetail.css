@@ -1,0 +1,271 @@
+.eventdetail-body {
+    margin-top: 0px;
+    margin-bottom: 110px;
+    position: relative;
+}
+
+.eventdetail-body-container {
+    max-width: 1190px;
+    display:flex;
+    margin: auto;
+    position: relative;
+}
+
+.eventdetail-body-left {
+    width: 65%;
+}
+
+
+.event-share .event-share-social li:hover a {
+    background-color: #d96c2c;
+    cursor:pointer;
+}
+
+.event-share .event-share-social li:hover a svg {
+    color: #fff;
+}
+
+.eventdetail-left-container {
+    padding: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    align-content: flex-start;
+}
+
+.eventdetail-left-header {
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.eventdetail-left-header-container {
+    display:flex;
+    margin: auto;
+    position: relative;
+
+}
+
+.content-left {
+    width: 74%;
+    display:flex;
+    position: relative;
+    min-height: 1px;
+
+}
+
+.content-left-wrap {
+    margin: 0 15px 0 0;
+    --e-column-margin-right: 15px;
+    --e-column-margin-left: 0px;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.content-left-container {
+    width: 100%;
+}
+
+.event-title {
+    font-size: 30px;
+    margin:  0 0 0 0;
+    line-height: 1.21;
+    color: #000;
+    font-weight: bold;
+    font-family: Space Grotesk;
+}
+
+.content-right {
+    width: 26%;
+    position: relative;
+    display:flex;
+    min-height: 1px;
+    
+}
+.content-right-wrap {
+    justify-content: flex-end;
+    padding: 0;
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.content-left-container {
+    width: auto;
+    max-width: 100%;
+}
+
+.eventdetail-date {
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+    padding: 8px;
+    background-color: #d96c2c;
+    text-align: center;
+}
+
+.eventdetail-left-body {
+    margin-block-end: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.eventdetail-content p {
+    color: #737373;
+    box-sizing: border-box;
+    line-height: 1.86em;
+    margin: 0 0 2em;
+}
+
+.eventdetail-content h3 {
+    margin: 25px 0;
+    font-size: 20px;
+    color: #d96c2c;
+    font-weight: 500;
+}
+
+.eventdetail-img-container {
+    margin: 40px 0;
+    display:flex;
+    align-items: normal !important;
+    gap: 2em;
+    flex-wrap: nowrap !important;
+}
+
+.eventdetail {
+    flex-basis: 0;
+    flex-grow: 1;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.event-detail_img img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    vertical-align: bottom;
+}
+
+.eventdetail-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.registernow-btn a {
+    box-shadow: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: capitalize;
+    border-radius: 0;
+    background-color: #d96c2c;
+    color: #fff;
+    padding: 17px 51px;
+    transition: all 0.3s ease;
+}
+.registernow-btn a:hover {
+    background-color: #000;
+
+}
+
+.eventdetail-body-right {
+    width:35%;
+}
+
+.eventdetail-right-container {
+    margin: 0 0 0 10px;
+    --e-column-margin-left: 10px;
+    padding: 10px;
+    display:flex;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.eventdetail-right-header {
+    margin-bottom: 30px;
+    margin-block-end: 20px;
+    width: 100%;
+}
+
+.eventdetail-info {
+    padding: 50px 55px;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+
+.info-contact {
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.info-contact li {
+    margin-bottom: 30px;
+}
+
+.info-contact .info {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.info-contact label {
+    display:block;
+    font-weight: 400;
+    line-height: 1.2;
+
+}
+
+.event-share .event-share-social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.event-share-social li {
+    margin: 0 5px 5px 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.event-share-social li a {
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.eventdetail-right-footer {
+    width: 100%;
+    position: relative;
+
+}
+
+.eventdetail-right-footer-container {
+    height: 430px;
+    overflow: hidden;
+}
+
+.info-contact li .label {
+    display:block;
+}

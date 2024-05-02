@@ -1,0 +1,66 @@
+.ContentCustomer{
+    display: flex;
+    max-width: 1250px;
+    margin: auto;
+    gap:50px
+}
+.ContentCustomer .contentLetf{
+    width: 70%;
+}
+.ContentCustomer .contentLetf table{
+    width: 100%;
+}
+.ContentCustomer .contentRight{
+    width: 30%;
+}
+
+.customer-container img {
+    width: 50px;
+}
+
+.customer-info  {
+    margin-top: 20px;
+}
+
+.customer-info p {
+    margin: 5px;
+
+}
+
+
+
+.customer-info span {
+    font-weight: bold;
+}
+
+
+
+.ContentCustomer {
+    margin-top: 50px;
+    height: 500px;
+}
+
+
+.contentLetf td button {
+    border: none;
+    background-color: #d96c2c;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+.contentLetf td button:hover {
+    background-color: #000;
+}
+
+
+.contentLetf table thead tr th {
+    text-align: center;
+}
+
+.contentLetf table tbody td {
+    text-align: center;
+}

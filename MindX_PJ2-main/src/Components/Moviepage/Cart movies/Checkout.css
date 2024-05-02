@@ -1,0 +1,616 @@
+.checkout-body {
+    max-width: 1190px;
+    padding: 0 10px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 60px;
+    
+}
+
+
+.checkout-header {
+    margin-top: 0;
+    font-size: 2em;
+    line-height: 1.21;
+    color: #000;
+    font-weight: bold;
+    margin: 1em 0 0.5em 0px;
+}
+
+.checkout-main {
+    display: flow-root;
+    margin-bottom: 70px;
+}
+
+.col2-set {
+    margin-bottom: 30px;
+    width: 100%;
+
+}
+
+.col2-set::before {
+    content: "";
+    display: table;
+}
+
+.col2-set::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.col-1 {
+    max-width: 100%;
+    padding: 0;
+    float: left;
+    width: 48%;
+}
+
+.col-2 {
+    max-width: 100%;
+    padding: 0;
+    float: right;
+    width: 48%;
+}
+
+.billing-fields h3 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-top: 0;
+    color: #000;
+    font-weight: bold;
+    margin: 1em 0 0.5em 0px;
+}
+
+.billing-fields-wrappers {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.billing-fields-wrappers .form-row {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    margin: 0 0 6px;
+
+}
+
+#billing_first_name_field {
+    order: 1;
+    width: 50%;
+    padding-right: 10px;
+}
+
+.form-row-first {
+    float:left;
+    overflow:visible;
+}
+
+.billing_first_name {
+    display:block;
+    width: 100%;
+    font-size: 1em;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.form-row label {
+    line-height: 2;
+}
+
+.form-row .required {
+    visibility: visible;
+    color: red;
+    font-weight: 700;
+    border: 0 !important;
+    text-decoration: none;
+}
+
+.field-input-wrapper {
+    width: 100%;
+    display:block;
+
+}
+
+
+.input-text {
+    border: 1px solid #e0e0e0;
+    line-height: 1.5em;
+    padding: 12px 15px;
+    color: #737373;
+    border-radius: 4px;
+    background: #fff;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+    transition: all ease-in-out 0.3s;
+    font-size: 1em;
+}
+
+
+#billing_last_name_field {
+    order: 2;
+    width: 50%;
+    padding-left: 10px;
+  
+}
+
+#customer-detail {
+    margin-bottom: 30px;
+}
+
+#customer-detail label {
+    display:block;
+    width: 100%;
+    font-size: 1em;
+    color: #000;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.form-row-wide {
+    clear: both;
+}
+
+#billing_company_field {
+    order: 3;
+    width: 100%;
+}
+
+.optional {
+    visibility: visible;
+    font-size: 1em;
+    color: #000;
+    font-weight: 600;
+}
+
+#billing_country_field {
+    order: 7;
+    margin-top: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    width: 100%;
+}
+
+.form-row select {
+    cursor: pointer;
+}
+
+select:not([size]):not([multiple]) {
+    background-color: #fff;
+    color: #737373;
+    border-radius: 0;
+    max-width: 100%;
+    appearance: none;
+    background-image: url("https://demo.ovatheme.com/aovis/wp-content/themes/aovis/assets/img/base/select-arrow.svg");
+    background-position: calc(561px - 12px) center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+
+.select2-hidden-accessible {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px  !important;
+    overflow: hidden  !important;
+    padding: 0  !important;
+    position: absolute !important;
+    width: 1px  !important;;
+}
+
+.select2-container {
+    line-height: 2em;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+
+}
+
+.select2-container-default {
+    width: 100%;
+}
+
+.select2-selection-single {
+    height: 45px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #fff;
+    
+}
+
+.select2-container-default .select2-selection-single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    margin: 0 0 -40px;
+}
+
+.select2-selection-rendered {
+    color: #737373;
+    padding-left: 15px;
+    line-height: 45px;
+}
+
+
+.select2-section-single {
+    display: block;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: no-wrap;
+}
+
+.select2-selection-single .select2-selection__arrow {
+    height: 45px;
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    width: 20px;
+}
+
+.select2-container .select2-selection-single .select2-selection__arrow {
+    background-image: url("https://demo.ovatheme.com/aovis/wp-content/themes/aovis/assets/img/base/select-arrow.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+
+
+  #billing-address-1 {
+    order: 8;
+    width: 100%;
+  }
+
+#billing-address-2{
+    order: 9;
+    width: 100%;
+}
+
+
+#billing_city_zip {
+    order: 10;
+}
+.additional-fields h3 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-top: 0;
+    color: #000;
+    font-weight: bold;
+    clear: both;
+    margin: 1em 0 0.5em 0px;
+}
+
+.big-field {
+    height:100px;
+}
+
+#customer-detail textarea {
+    border: 1px solid #e0e0e0;
+    height: 100px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #737373;
+    background-color: #fff;
+}
+
+
+#order_review_heading {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+#order_review .shop_table {
+    border: 1px solid #e0e0e0;
+    margin: 0 -1px 24px 0;
+    text-align: left;
+    width: 100%;
+    border-collapse: separate;
+    border-radius: 5px;
+}
+table {
+    border-spacing: 0;
+    font-size: 100%;
+    line-height: 2;
+}
+
+table thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table thead tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+
+}
+
+table thead tr th {
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 700;
+    padding: 9px 12px;
+    line-height: 1.5em;
+}
+
+.product-name {
+    border-right: 1px solid #e0e0e0;
+
+}
+
+table tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+
+}
+
+table tbody tr {
+    border: none;
+}
+
+
+
+table tbody tr td.product-name {
+    border-right: 1px solid #e0e0e0;
+    width: 70%;
+}
+
+table tbody td {
+    padding: 9px 12px;
+    vertical-align: middle;
+    line-height: 1.5em;
+    color: #737373;
+    text-align: left;
+}
+
+table tbody tr td a {
+    color: #000;
+    border-bottom: 1px solid #d96c2c;
+    font-weight: normal;
+}
+
+dl.variation:last-child {
+    margin-bottom: 0;
+    line-height: 1.6em;
+
+}
+
+dl.variation {
+    list-style: none outside;
+    margin-top: 25px
+}   
+
+dl.variation dt {
+    float:left;
+    clear: both;
+    margin-right: 0.25em;
+    display: inline-block;
+    list-style: none outside;
+}
+
+dl.variation dd {
+    margin: 0;
+
+}
+
+
+dl.variation p {
+    margin-bottom: 0;
+    line-height: 1.6em;
+    margin: 0 0 2em;
+}
+
+tfoot th {
+    font-weight: 700;
+    border-top: 1px solid rgba(0,0,0, .1);
+    color: #737373;
+    margin-left: 5px;
+    padding: 9px 12px;
+    line-height: 1.5em;
+    
+}
+
+tfoot td {
+    font-weight: 700;
+    border-top: 1px solid rgba(0,0,0, .1);
+
+}
+
+dl.variation p {
+    margin-bottom: 0;
+}
+
+dl.variation dt {
+    font-weight: 0;
+}
+
+.field-input-wrapper .country_select {
+    max-height: 200px;
+    overflow-y: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 50;
+    top: 50px;
+    width: 100%;
+    border-top: 1px solid #f7f7f7;
+    background-color: #fff;
+
+}
+
+.country_select li {
+    padding: 6px;
+    -webkit-user-select: none;
+    cursor: pointer;
+    z-index: 100;
+    border-top: 1px solid #f7f7f7;
+    padding-left: 15px;
+    height: 50px;
+    display:flex;
+    align-items: center;
+}
+
+.city-selected {
+    background-color: #737373;
+}
+
+.country_select li:hover {
+    background-color: #0073AA;
+    color: #fff;
+}
+
+#payment {
+    border-radius: 0px;
+    background-color: #e8eaee;
+
+}
+
+.wc_payment_methods {
+    padding: 32px 25px 32px 25px;
+    border-bottom: 1px solid  #e0e0e0;
+}
+
+.payment_methods {
+    text-align: left;
+    border-bottom: 1px solid #cfc8d8;
+    margin: 0;
+    list-style: none outside;
+}
+
+#payment .payment_methods li {
+    line-height: 2;
+    text-align: left;
+    margin: 0;
+    font-weight: 400;
+}
+
+.wc_payment_methods li input {
+    height: unset;
+    margin: 0 8px 0 0;
+
+}
+
+
+.payment_box {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    font-size: .92em;
+    line-height: 1.5;
+    color: #515151;
+    background-color: #fff;
+    margin: 12px 0 22px 0;
+    border-radius: 0;
+}
+
+.payment_box::before {
+    border-bottom-color: #fff !important;
+    content: "";
+    display: block;
+    border: 1em solid #dcd7e3;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    top: -0.75em;
+    left: 0;
+    margin: -1em 0 0 2em;
+
+}
+
+.wc_payment_methods li label {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    color: #000;
+    font-weight: 500;
+}
+
+#payment .form-row {
+    padding: 1em;
+    margin: 0 0 6px;
+}
+
+.term-and-conditions-wrapper a {
+    text-decoration: none;
+    color: #d96c2c;
+    
+}
+
+#place_order {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #333;
+    float: right;
+    line-height: 1.5em;
+    border-radius: 0px;
+    padding: 12px 15px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#place_order:hover {
+    cursor: pointer;
+    background-color: #d96c2c;
+
+}
+
+
+
+.product-name a {
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+table tfoot td {
+    padding: 9px 12px;
+    vertical-align: middle;
+    line-height: 1.5em;
+}
+
+.checkout-countdown {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #d96c2c;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 15px;
+    color :#fff;
+}
+
+.countdown-time .countdown-timer {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.place-order::before {
+    content: "   ";
+    display: table;
+}
+
+.place-order::after {
+    content: "   ";
+    display: table;
+}
+
+.btn_order_container {
+    display:flex;
+    justify-content: flex-end;
+}

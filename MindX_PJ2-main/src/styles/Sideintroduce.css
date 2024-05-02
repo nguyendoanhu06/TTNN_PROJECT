@@ -1,0 +1,143 @@
+.side-introduce-container {
+    display:flex;
+    margin: auto;
+    position: relative;
+}
+
+.side-introduce-item-container {
+    width: 33.33%;
+    display:flex;
+    position: relative;
+    min-height: 1px;
+}
+
+.side-introduce-item {
+    display:flex;
+    width: 100%;
+    flex-wrap:wrap;
+    align-content: flex-start;
+}
+
+.side-introduce-item-wrap {
+    width: 100%;
+}
+
+.side-introduce-item-context {
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+}
+
+.side-introduce-box {
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: #fff;
+    padding: 95px 0 60px 0;
+    display:flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    /* mask-image: url("assets/img/mask-image/mask-image-iconbox.png");
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center center;
+    -webkit-mask-repeat: no-repeat; */
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.side-introduce-box-bg {
+    background-image: url("https://demo.ovatheme.com/aovis/wp-content/uploads/2023/03/image-1-film-feature-home-1.jpg");
+    mix-blend-mode: luminosity;
+    background-position: center;
+    opacity : 0.5;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transition: all 1s ease;
+
+}
+
+.side-introduce-overlay {
+    -webkit-transition: all 0.5s linear;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000;
+}
+
+.side-introduce-box-content {
+    position: relative;
+    z-index: 2;
+}
+
+.side-introduce-box-content .title {
+    font-size: 40px;
+    text-align: center;
+    -webkit-transition: all 0.3s linear;
+    color: #fff;
+    white-space: pre-line;
+    width: 300px;
+    height: 144px;
+    font-weight: bold;
+}
+
+.side-introduce-box .box-icon {
+    background-color: #fff;
+    width: 90px;
+    height: 90px;
+    margin: 0 0 30px 0;
+    -webkit-transition: all 0.3s linear;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+}
+
+.box-icon svg {
+    font-size: 32px;
+    color: #d96c2c;
+    -webkit-transition: all 0.3s linear;
+    display: inline-flex;
+
+}
+
+.box-icon::after {
+    -webkit-transition: all 0.3s linear;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 120%;
+    height: 120%;
+    border-radius: 50%;
+}
+
+.side-introduce-item:hover .side-introduce-box-bg
+{
+    transform: scale(1.2);
+}
+
+
+.side-introduce-item:hover .box-icon svg{
+    color:#fff;
+}
+.side-introduce-item:hover .box-icon {
+    background-color: #d96c2c;
+}
+
+.side-introduce-item:hover .box-icon::after {
+    width: 140%;
+    height: 140%;
+}

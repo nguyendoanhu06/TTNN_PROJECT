@@ -1,0 +1,410 @@
+.main-slider {
+    position: relative;
+  }
+  
+.thumbnail-slider {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    max-width: 658px;
+    width: 100%;
+    padding: 60px 55px 50px 135px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 60px rgba(255, 255, 255, 0.1);
+    visibility: hidden;
+  }
+  
+
+.thumbnail-slider img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    position: absolute;
+    left: 55px;
+}
+
+.big-slider {
+  width: 100%;
+  height: 900px;
+}
+
+.big-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.big-slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); 
+
+}
+
+
+.movie-sharing {
+  position: absolute;
+  top:100%;
+  left: 30px;
+  transform: translateY(-200%);
+  line-height: 1;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-share {
+  display:inline-block;
+  writing-mode: vertical-lr;
+  color: #fff;
+  margin: 0 -3px 10px 0;
+}
+
+.line {
+  display: inline-block;
+  width: 1px;
+  height: 100px;
+  background-color: rgba(255, 255,255 ,0.3);
+}
+
+.share-social {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.share-social li {
+  padding: 20px 0 0 0 ;
+}
+
+.share-social li a {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.share-social-icon {
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: 400;
+  -webkit-font-smoothing: -webkit-font-smoothing;
+  display: inline-block;
+
+}
+
+.share-social-icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.big-slider-text {
+  max-width: 650px;
+  position: relative;
+  margin-left: 400px;
+}
+
+.big-slider-heading {
+  position: relative;
+  margin-top: 320px;
+  width: max-content;
+  max-width: 600px;
+}
+
+.big-slider-movie-category {
+  position:absolute;
+  bottom: 92%;
+  left: 29%;
+  width: fit-content;
+  z-index: 1;
+  margin: 0;
+  font-family: "Covered By Your Grace";
+  font-size: 40px;
+  color: #d96c2c;
+  font-weight: bold;
+  clear: both;
+}
+
+.big-slider-heading a {
+  box-shadow: none;
+  text-decoration: none;
+  color:#d96c2c;
+  background-color: transparent;
+  max-width: 500px;
+}
+
+.big-slider-heading h1:hover {
+  color: #d96c2c;
+}
+
+.big-slider-heading a h1 {
+  transition: all 0.5s ease;
+  margin: 0 0 25px 0;
+  font-size: 90px;
+  line-height: 1;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: Space Grotesk;
+  font-weight: bold;
+  clear: both;
+}
+
+.big-slider-excerpt {
+  margin: 0 0 36px 0;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.86em;
+}
+
+.big-slider-button {
+  margin-bottom: 230px;
+}
+
+.big-slider-button a {
+  box-shadow: none;
+  text-decoration: none;
+  color:#d96c2c;
+  background-color: transparent;
+}
+
+.big-slider-button a .more-info {
+    background-color: #fff;
+    color: #000;
+    margin: 0 15px 15px 0;
+    padding: 17px 50px;
+    font-size: 15px;
+    min-width: 175px;
+    border: none;
+    line-height: 1.5em;
+    cursor: pointer;
+    font-weight: 600;
+    display:inline-block;
+}
+
+.big-slider-button .button-booking {
+  margin: 0 15px 15px 0;
+  padding: 17px 50px;
+  font-size: 15px;
+  min-width: 175px;
+  border: none;
+  line-height: 1.5em;
+  background-color: #d96c2c;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.big-slider-release {
+  position: absolute;
+  right: 300px;
+  top: 200px;
+  color: #fff;
+}
+
+.big-slider-release .time {
+  position: relative;
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.big-slider-release .time::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  bottom: -10px;
+  width: 110%;
+  height: 15px;
+  background-image: url("https://demo.ovatheme.com/aovis/wp-content/plugins/movie-booking/assets/img/underline-heading-entire.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size:cover;
+  font-size:30px;
+}
+
+.trailer-slider-wrapper {
+  display:block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 658px;
+  width: 100%;
+  padding: 60px 55px 50px 135px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 60px rgba(255, 255, 255, 0.1);
+  overflow: hidden; 
+
+}
+
+.arrow-trailer {
+  position: absolute;
+  left: 55px;
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  top: 16px;
+}
+
+.trailer-sllider-wrapper span {
+  position: absolute;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+}
+
+.trailer-slider {
+  margin: 0;
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.5s ease; 
+  width: 500px;
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.trailer-slider::-webkit-scrollbar {
+  display: none;
+}
+.trailer-draggable {
+  flex: 0 0 50%; 
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+
+}
+.trailer-draggable:first-child {
+  margin-right: 10px;
+}
+.movie-trailer-item {
+  width: 100%;
+  display: inline-block;
+}
+
+.movie-trailer-media {
+  position: relative;
+  margin-right: 20px;
+}
+
+.movie-trailer-media img {
+  display: block;
+  width: 100%;
+  height: 104px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  max-width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  transition: transform 0.2s ease;
+}
+
+.has-trailer .trailer-video {
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -180%);
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  cursor:pointer;
+  z-index: 2;
+  line-height: 1.5em;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.trailer-play {
+  transition: all 0.3s ease;
+  display: inline-flex;
+  font-size: 16px;
+  color: #000;
+  font-weight: 900;
+}
+
+.text-trailer {
+  position: absolute;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+  top: 16px;
+}
+
+.drag-track .slick-slide {
+  opacity: 1;
+  width: 234px;
+  display: flex;
+}
+
+
+.trailer-video:hover {
+  background-color: #d96c2c;
+  cursor: pointer;
+}
+
+.trailer-play:hover {
+  color: #fff;
+}
+
+.trailer-slider-wrapper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -50px; 
+  width: 100px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)); 
+  pointer-events: none; 
+}
+
+.movie-trailer-media-active img {
+  border-color:#d96c2c;
+}
+
+
+.big-slider-button a :hover {
+  background-color: #d96c2c;
+  color: #fff;
+  transition: all 0.7s ease;
+}
+.big-slider-button .button-booking:hover {
+  transition: all 0.7s ease;
+  color: #000;
+  background-color: #fff;
+}
+
+
+
+ /* responsive */
+ @media only screen and (max-width: 1366px) {
+  .big-slider-text {
+    margin-left: 150px;
+  }
+  .big-slider-release  {
+     right: 100px;
+  }
+}

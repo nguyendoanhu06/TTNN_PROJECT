@@ -1,0 +1,39 @@
+.nowplayingpage-body {
+    padding: 0 0 110px 0;
+}
+
+.nowplayingpage-container {
+    max-width: 1190px;
+    display:flex;
+    margin: auto;
+    position: relative;
+
+}
+
+.nowplayingpage-context {
+    width: 100%;
+    min-height: 1px;
+    position: relative;
+}
+
+.nowplayingpage-wrap {
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    align-content: flex-start;
+}
+
+.nowplaying-movielist {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    display: grid;
+    gap: 30px;
+}
+
+.nowplaying-movielist .content-item {
+    border: 5px solid transparent;
+}
+
+.nowplaying-movielist .content-item:hover {
+    border: 5px solid #d96c2c;
+}
