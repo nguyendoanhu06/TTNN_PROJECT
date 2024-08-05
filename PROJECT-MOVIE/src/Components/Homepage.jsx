@@ -24,7 +24,7 @@ console.log(inputSearchTerm)
         <Headerslide></Headerslide>
         <img
           src="https://demo.ovatheme.com/aovis/wp-content/uploads/2023/02/image-lines-header.jpg"
-          alt=""
+          alt="" 
         />
       </div>
       <div className="content">

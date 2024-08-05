@@ -100,7 +100,7 @@ export default function Myaccount() {
                         </p>
                         <Field type="text" name="username" />
 
-                        <p classname="field-display">
+                        <p className="field-display">
                           <label htmlFor="password">
                             Mật khẩu <span className="required">*</span>
                             <ErrorMessage

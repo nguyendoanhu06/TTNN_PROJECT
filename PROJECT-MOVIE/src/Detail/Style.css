@@ -344,7 +344,7 @@ h2{
     position: relative;
 }
 .more-item{
-    width: 360px;
+    width: 300px;
     transition: all 0.5s ease;
     border: 5px solid transparent;
     
@@ -354,7 +354,7 @@ h2{
     border-color: #d96c2c;
 }
 .more-item img{
-    width: 350px;
+    width: 290px;
     height: 500px;
     object-fit: cover;
     
