@@ -176,14 +176,14 @@ export default function Featuredmovie() {
                 </div>
                 <div className="movie-explore-middle">
                   <div className="movie-explore-middle-container">
-                    <p>more comedy & horror movies you can explore</p>
+                    <p>Nhiều phim hài và kinh dị hơn mà bạn có thể khám phá</p>
                   </div>
                 </div>
                 <div className="movie-explore-right">
                   <div className="movie-explore-right-container">
                     <NavLink to={"/#"}>
                       <span className="button-content-wrapper">
-                        <span className="explore-button-text">Explore Now</span>
+                        <span className="explore-button-text">Khám phá ngay</span>
                       </span>
                     </NavLink>
                   </div>

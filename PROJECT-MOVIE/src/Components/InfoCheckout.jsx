@@ -58,7 +58,7 @@ console.log(chairs)
     }
   
     const deleteTicket = async (id) => {
-        let result =confirm("a")
+        let result =confirm("XÁC NHẬN HỦY?")
         if(result){
             await deleteDoc(doc(bookingCollection, id))
             alert("HỦY VÉ THÀNH CÔNG")

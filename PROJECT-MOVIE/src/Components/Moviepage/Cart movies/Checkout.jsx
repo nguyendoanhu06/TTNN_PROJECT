@@ -77,7 +77,8 @@ export default function Checkout() {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [history]);
+  }, [navigate]);
+
   const formatTime = (time) => {
     const minutes = Math.floor(time / 60);
     const remainingSeconds = time % 60;
@@ -95,7 +96,7 @@ export default function Checkout() {
       idShow: idShow,
       soGhe: soGhe,
       paymentMethod: paymentMethod,
-      uid: userId
+      uid: userId || "defaultUID"
     };
   
     try {
@@ -112,10 +113,9 @@ export default function Checkout() {
     firstName: Yup.string().required("Vui lòng nhập đúng họ "),
     lastName: Yup.string().required("Vui lòng nhập đúng tên"),
     address: Yup.string().required("Bạn phải nhập địa chỉ"),
-    zipcode: Yup.string()
-      .matches(/^\d{5}$/, "Mã ZIP phải có 5 chữ số")
-      .required("ZIP code là bắt buộc"),
+    
   });
+
   return (
     <div className="checkout-section">
       <div className="cart-movies_header">
@@ -136,7 +136,7 @@ export default function Checkout() {
               firstName: "",
               lastName: "",
               address: "",
-              zipcode: "",
+              
             }}
             validationSchema={validationSchema}
             onSubmit={(values, { setSubmitting }) => {
@@ -146,7 +146,7 @@ export default function Checkout() {
             }}
           >
             {({ isSubmitting }) => (
-              <Form name="checkout" method="get" class="checkout-form">
+              <Form name="checkout" method="get" className="checkout-form">
                 <div className="col2-set " id="customer-detail">
                   <div className="col-1">
                     <div className="billing-fields">
@@ -320,25 +320,8 @@ export default function Checkout() {
                           className="form-row address-field form-row-wide"
                           id="billing_city_zip"
                         >
-                          <label htmlFor="billing_zip">
-                            ZIP Code{" "}
-                            <abbr title="required" className="required">
-                              *
-                            </abbr>
-                          </label>
-                          <span className="field-input-wrapper">
-                            <Field
-                              type="text"
-                              name="zipcode"
-                              className="input-text"
-                              placeholder="ZIP Code gồm 5 chữ số"
-                            />
-                            <ErrorMessage
-                              name="zipcode"
-                              component="div"
-                              className="error-message"
-                            />
-                          </span>
+                          
+                          
                         </p>
                       </div>
                     </div>
@@ -486,13 +469,14 @@ export default function Checkout() {
                             </p>
                           </div>
                           <div className="btn_order_container">
-                          <button
-                            className="button alt"
-                            name="checkout_place_order"
-                            id="place_order"
-                          >
-                            Xác nhận
-                          </button>
+                            <button
+                              className="button alt"
+                              name="checkout_place_order"
+                              id="place_order"
+                              type="submit"
+                            >
+                              Xác nhận
+                            </button>
                           </div>
                         </div>
                       </div>

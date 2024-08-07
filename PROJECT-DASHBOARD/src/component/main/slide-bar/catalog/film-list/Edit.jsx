@@ -307,7 +307,7 @@ console.log(mess?.img)
     e.preventDefault();
     console.log(param.id, mess)
     await updateDoc(doc(messCollect, param.id), mess);
-    Swal.fire({ title: "Update!", text: "Xóa thành công!", icon: "success" });
+    Swal.fire({ title: "Update!", text: "Cập nhật thành công!", icon: "success" });
   }
 
   return (

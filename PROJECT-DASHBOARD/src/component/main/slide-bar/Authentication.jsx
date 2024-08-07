@@ -75,7 +75,7 @@ export default function Invoice() {
   console.log(findItemAuth?.role == "admin")
   const renderDS = () => {
     return data.map((it, index) => {
-      let disable = it.gmail == "mindx2024@gmail.com" ? true : false
+      let disable = it.gmail == "nhunda06@gmail.com" ? true : false
       return <tr key={it.id}>
         <td>{index + 1}</td>
         <td>{it.name}</td>
@@ -85,7 +85,7 @@ export default function Invoice() {
         <td>
           <input disabled={disable} onChange={() => handleChangeRole(event, it.id, index)} value={it.role} />
         </td>
-        <td>{it.gmail !== "mindx2024@gmail.com" ? <button style={{ marginTop: "10px" }} className='btn btn-danger' onClick={() => { deleteRole(it.id) }}>Delete</button> : ""}</td>
+        <td>{it.gmail !== "nhunda06@gmail.com" ? <button style={{ marginTop: "10px" }} className='btn btn-danger' onClick={() => { deleteRole(it.id) }}>Delete</button> : ""}</td>
       </tr>
     })
   }
